@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.11.23)  6 MAR 2023 16:58
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.11.23)  7 MAR 2023 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,7 +724,6 @@ LaTeX Info: Redefining \nameref on input line 35.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\pagenumberwidth=\skip97
 \makecvheaddetailsbox=\box68
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
 6.
@@ -761,8 +760,8 @@ File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonsta
 ndard glyph set (RS)
 )
 \makecvheadpicturebox=\box69
-\makecvheaddetailswidth=\skip98
-\makecvheadpicturewidth=\skip99
+\makecvheaddetailswidth=\skip97
+\makecvheadpicturewidth=\skip98
 \makecvheadnamebox=\box70
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--36
@@ -789,14 +788,23 @@ Overfull \hbox (2.30249pt too wide) in paragraph at lines 110--110
  []
 
 [2] [3] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 474F6B890308E51EF315B302FD42CB6B;889.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  474F6B890308E51EF315B302FD42CB6B;889.
  ) 
 Here is how much of TeX's memory you used:
- 24333 strings out of 476156
- 452483 string characters out of 5814962
- 776351 words of memory out of 5000000
- 44653 multiletter control sequences out of 15000+600000
+ 24332 strings out of 476156
+ 452481 string characters out of 5814962
+ 772245 words of memory out of 5000000
+ 44652 multiletter control sequences out of 15000+600000
  533043 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  129i,13n,122p,1001b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
