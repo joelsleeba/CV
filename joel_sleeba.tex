@@ -1,142 +1,352 @@
-\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
-\documentclass[11pt,a4paper,serif]{moderncv}
-\moderncvstyle{classic}
-\moderncvcolor{blue}
-\usepackage[scale=0.75]{geometry}
-\setlength{\footskip}{136.00005pt}
-% \ifxetexorluatex
-  % \usepackage{fontspec}
-  % \usepackage{unicode-math}
-  % \defaultfontfeatures{Ligatures=TeX}
-  % \setmainfont{Noto Serif Display}
-  % \setsansfont{Roboto}
-  % \setmonofont{Noto Sans Mono}
-  % \setmathfont{Noto Sans Math} 
-% \else
-  \usepackage[T1]{fontenc}
-  \usepackage{lmodern}
-% \fi
+\documentclass[letterpaper,11pt]{article}
 
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{soul}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
 
-\name{Joel}{Sleeba}
-\email{sleeba21@iisertvm.ac.in}
-% \email{joelsleeba24@gmail.com}
-\homepage{joelsleeba.github.io}
-\social[twitter]{JoelSleeba}
-\social[github]{joelsleeba}
 
-\AtBeginDocument{\hypersetup{colorlinks,urlcolor=cyan}}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-0pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
-\makecvtitle
 
-\section{About Me}
-I am a math graduate from \underline{\href{https://iisertvm.ac.in/}{IISER Thiruvananthapuram}}. As part of my Master’s thesis, I worked on Fourier analysis under the supervision of \underline{\href{https://iisertvm.ac.in/faculty/devarajp}{Dr. P Devaraj}}. Currently, I am reading on \textbf{C* algebras and operator algebras} with \underline{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr. P Shankar}}. I am also learning to use \href{https://leanprover-community.github.io/index.html}{\underline{Lean theorem prover}} by working through \underline{\httplink[Mathematics in Lean]{https://leanprover-community.github.io/mathematics_in_lean/index.html}}. Besides math, I am interested in computer programming, Linux, photography and movies.
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
+\begin{center}
+    {\Huge \scshape Joel Sleeba} \\ \vspace{2pt}
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    % \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{email@gmail.com}} ~ 
+    \small \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{joelsleeba1@gmail.com}} ~ 
+    \href{https://twitter.com/JoelSleeba/}{\raisebox{-0.2\height}\faTwitter\ \ul{JoelSleeba}}  ~
+    \href{https://github.com/joelsleeba}{\raisebox{-0.2\height}\faGithub\ \ul{joelsleeba}} ~
+    \href{https://joelsleeba.github.io/}{\raisebox{-0.2\height}\faGlobe\ \ul{joelsleeba.github.io}}
+
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
 \section{Education}
-  \cventry{2021--2023}{M.Sc Mathematics}{IISER Thiruvananthapuram}{GPA: 8.38}{}{
-    % \begin{itemize}
-      \textbf{Relevant courses:} Functional Analysis, Measure Theory, Topology, Abstract Algebra, Analysis on Manifolds, Finite Frames, Represenatation Theory, Machine Learning
-      % \item \textbf{Readings} 
-      %   \begin{itemize}
-      %     \item \emph{Functional Analysis}, S. Kesavan
-      %     \item \emph{Measure, Integration and Real Analysis}, Sheldon Axler 
-      %     \item \emph{Topology}, James Munkres
-      %     \item \emph{Abstract Algebra}, David S. Dummit, Richard M. Foote
-      %     \item \emph{Analysis on Manifolds}, James Munkres
-      %   \end{itemize}
-    % \end{itemize}
-  }
-  \cventry{2018--2021}{B.Sc Mathematics}{Madras Christian College}{}{GPA: 8.03}{
-    % \begin{itemize}
-      \textbf{Relevant courses:} Real Analysis, Algebra, Linear Algebra, Number Theory, Discrete Mathematics
-      % \item \textbf{Readings}
-      %   \begin{itemize}
-      %     \item \emph{Understanding Analysis}, Stephen Abbott
-      %     \item \emph{Topics in Algebra}, I. N. Herstein
-      %     \item \emph{Linear Algebra Done Right}, Sheldon Axler
-      %     \item \emph{Elementary Number Theory}, David M. Burton
-      %   \end{itemize}
-    % \end{itemize}
-  }
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Science Eductaion and Research}{Oct. 2021 -- May 2023}
+      {Master of Science in Mathematics, GPA: 8.38}{Thiruvananthapuram, Kerala}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Madras Christian College}{June 2018 -- May 2021}
+      {Bachelor of Science in Mathematics, GPA: 8.03}{Chennai, Tamil Nadu}
+  \resumeSubHeadingListEnd
 
-\section{Research Experience}
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item \small Functional Analysis
+                \item Measure Theory
+                \item Representation Theory
+                \item Finite Frames
+                \item Topology
+                \item Real Analysis
+                \item Analysis of Manifolds
+                \item Machine Learning
 
-\cventry{2023 June -- present}{Reading Project}{Dr. P Shankar}{Cochin University of Science and Techhnology}{}{}
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
 
-% \cventry{2023 Jan -- 2023 April}{Masters Thesis}{Dr. P Devaraj}{IISER Thiruvananthapuram}{}{Learned about Fourier series, convergence of Fourier series, Fourier transforms in $L^1(\mathbb{R})$ and $L^2(\mathbb{R})$. I also understood classical Paley Wiener theorems and surveyed problem no. 4 from \emph{Some Problems in Harmonic Analysis}, 2017, Grafokos et al.}
 
-\subsection{Master's Thesis}
-\cvitem{Title}{A Study in Fourier Analysis: From Circle, Through the Line, to the Complex}
-\cvitem{Supervisor}{Dr. P Devaraj}
-\cvitem{Institute}{IISER Thiruvananthapuram}
-\cvitem{Description}{
-  Learned about Fourier series, convergence of Fourier series, Fourier transforms in $L^1(\mathbb{R})$ and $L^2(\mathbb{R})$. I also understood classical Paley Wiener theorems and surveyed problem no. 4 from \emph{Some Problems in Harmonic Analysis}.
-  Readings:
-  \begin{itemize}
-    \item \emph{Early Fourier Analysis}, Hugh L. Montgomery
-    \item \emph{Real and Complex Analysis}, Walter Rudin
-    \item \emph{Some Problems in Harmonic Analysis}, 2017, Grafokos et al.
-  \end{itemize}
-}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-\section{Summer Schools}
-  \cventry{2021 April -- 2021 May}{Mathematics Training and Talent Search}{Online}{}{}{Participated in level 1 of the national annual summer camp hosted by MTTS trust.
-  % \textbf{Topics}
-  % \begin{itemize}
-  %   \item \emph{Foundations}, S. Kumaresan
-  %   \item \emph{Algebra}, Krishna Hanumanthu
-  %   \item \emph{Analysis}, G. Santhanam
-  %   \item \emph{Topology}, Pratulnanda Das
-  % \end{itemize}
-}
+    \resumeSubheading
+      {Unitary Invariants for Representations of Operator Algebras}{Sept. 2023 -- Present}
+      {Reading Project}{Dr. Soumyashant Nayak, ISI Bangalore}
+      \resumeItemListStart
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
 
-  \cventry{2020 May -- 2020 June}{Mathematics Training and Talent Search}{Online}{}{}{Participated in level 0 of the national annual summer camp hosted by MTTS trust.
-  % \textbf{Topics}
-  % \begin{itemize}
-  %   \item \emph{Foundations}, S. Kumaresan
-  %   \item \emph{Algebra}, H. Ananthnarayan
-  %   \item \emph{Analysis}, A. J. Jayanthan
-  % \end{itemize}
-}  
+    \resumeSubheading
+      {Introduction to C* Algebras}{June 2023 -- Sept. 2023}
+      {Summer Reading Project}{Dr. P Shankar, Cochin University of Science and Technology}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Fourier Analysis: From Circle, through the line, to the complex}{Jan. 2023 -- April 2023}
+      {Masters Thesis}{Dr. P Devaraj, IISER Thiruvananthapuram}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Computability}{Jan. 2022 -- March 2022}
+      {Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Summer Schools and Symposiums}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      % \resumeProjectHeading
+      %     {\textbf{Frontier Symposium in Mathematics} $|$ \emph{Level 1 Camp}}{April 2022 -- May 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
+      %       \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+      %       \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+      %       \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+      %     \resumeItemListEnd
+      %     \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Mathematics Training and Talent Search} $|$ \emph{Level 1 Camp}}{April 2021 -- May 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
+            \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+            \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Mathematics Training and Talent Search} $|$ \emph{Level 0 Camp}}{May 2020 -- June 2020}
+          \resumeItemListStart
+            \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
+            \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
+            \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Operator Algebra Reading Group}{Sept. 2023 -- Present}{}{}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Pi Quiz 3.0}{March 14, 2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Online Foundation Course in Mathematics}{Sept. 2021 -- Oct. 2021}{Mentor}{MTTS Trust}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
 
 \section{Achievements}
-  \cventry{2021}{Rank 1}{M.Sc mathematics entrance examination}{Pondicherry University}{}{}
-  \cventry{2021}{Rank 3}{M.Sc mathematics entrance examination}{Hyderabad Central University}{}{}
+    \resumeSubHeadingListStart
 
-\section{Skills}
-  \cventry{Scripting}{Python, Bash}{}{}{}{
-    \textit{Python Libraries:} Matplotlib, Scikit, Numpy \\ 
-    \textit{Bash:} Task automation in Linux}
-  \cventry{Programming}{C, C++, Java}{}{}{}{
-    \textit{C:} Algorithms involving pointers and structures \\ 
-    \textit{C++, Java:} Object Oriented Programming paradigm}
-  \cventry{CAS}{MATLAB, GNU Octave, Maxima, SageMath}{}{}{}{
-    \textit{MATLAB,Maxima}: Basics as part of Coursework. \\ 
-    \textit{GNU Octave, SageMath}: Introductory knowledge}
-  \cventry{Markup}{$LaTeX$, Markdown, HTML}{}{}{}{}
-  \cventry{Languages}{English, Malayalam, Tamil, Hindi}{}{}{}{Native proficiency in English and Malayalam. Elementary proficiencty in Tamil and Hindi.}
+        \resumeSubheading
+        {\textbf M.Sc Entrance Examination}{2021}
+        {Rank 1, Mathematics}{Pondicherry University}
+
+        \resumeSubheading
+        {\textbf M.Sc Entrance Examination}{2021}
+        {Rank 3, Mathematics}{Hyderabad Central University}
+
+        \resumeSubHeadingListEnd
 
 \section{Additional Courses}
-  \cventry{2020 July -- 2020 Dec}{CS101.2x: Object-Oriented Programming}{IITBombayX}{MOOC}{A+}{
-    \textit{Instructors:} \href{https://www.cse.iitb.ac.in/~dbp/}{Prof. Deepak B Phatak}, \href{https://www.cse.iitb.ac.in/~supratik/}{Prof. Supratik Chakraborty}\\
-    \textit{Topics:} Object Oriented Paradigm, Algorithms in OOP
-  }
-  \cventry{2020 July -- 2020 Dec}{CS101.1x: Programming Basics}{IITBombayX}{MOOC}{A+}{
-    \textit{Instructors:} \href{https://www.cse.iitb.ac.in/~dbp/}{Prof. Deepak B Phatak}, \href{https://www.cse.iitb.ac.in/~supratik/}{Prof. Supratik Chakraborty}\\
-    \textit{Topics:} Syntax and basic algorithms in C++
-  }
+  \resumeSubHeadingListStart
 
-\section{Teaching}
-  \cventry{2021 Sep -- 2021 Oct}{Mentor}{Online Foundation Course in Mathematics}{MTTS Trust}{}{Cleared doubts and guided discussions for first and second year undergraduates.}
+    \resumeSubheading
+    {\textbf CS101.2x: Object-Oriented Programming}{July 2020 -- Dec. 2020}
+    {Grade: A+ (Maximum Possible Grade)}{MOOCs Course, IITBombayX}
 
+    \resumeSubheading
+    {\textbf CS101.1x: Programming Basics}{July 2020 -- Dec. 2020}
+    {Grade: A+ (Maximum Possible Grade)}{MOOCs Course, IITBombayX}
 
-\section{Projects}
-  \cventry{2022 Sep -- 2022 Nov}{Math Modelling}{The International Genetically Engineered Machine competition (iGEM)}{IISER Thiruvananthapuram}{}{Modelled vesicle internalization for a breast cancer drug delivery system. The model can be accessed \href{https://2022.igem.wiki/iiser-tvm/model}{here.}}
-  \cventry{2022 Sep -- 2022 Nov}{Web Developement}{The International Genetically Engineered Machine competition (iGEM)}{IISER Thiruvananthapuram}{}{Developed the team webpage. The website can be accessed \href{https://2022.igem.wiki/iiser-tvm/}{here.}}
-  \cventry{2021 January}{XOR encryptor}{}{}{}{Developed a python script that can encrpyt any file or text using a key or password. The repository can be accessed from \href{https://github.com/joelsleeba/xor-encryptor}{here.}}
-  \cventry{2020 May}{CSSart}{}{}{}{Developed a series of websites using CSS and HTML. The website can be accessed \href{https://joelsleeba.github.io/CSSart}{here.}}
+  \resumeSubHeadingListEnd
+
+\section{Other Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Math Modelling}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Web Development}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+        \resumeSubheading{XOR Encryptor}{Jan. 2021}{Developer}{}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+
+        \resumeSubheading{CSSart}{May. 2020}{Developer}{}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Search for Extra Terrestrial Intelligence}{Sept. 2015 --}{Volunteer}{SETI Institute}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+ 
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Programming}{: Python, C, C++, Java, Bash, SQL} \\
+     \textbf{Markup}{: \LaTeX, MarkDown, HTML, CSS} \\
+     \textbf{CAS}{: MATLAB, GNU Octave, Maxima, SageMath}
+    }
+ \end{itemize}
+ \vspace{-16pt}
 
 \end{document}
-
