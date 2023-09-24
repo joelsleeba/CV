@@ -7,7 +7,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -45,6 +45,14 @@
 \addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=black,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 
 \raggedbottom
 \raggedright
@@ -128,6 +136,9 @@
     \vspace{-8pt}
 \end{center}
 
+\hypersetup{
+  urlcolor=cyan
+  }
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -136,7 +147,7 @@
       {Indian Institute of Science Eductaion and Research}{Oct. 2021 -- May 2023}
       {Master of Science in Mathematics, GPA: 8.38}{Thiruvananthapuram, Kerala}
   \resumeSubHeadingListEnd
-  \vspace{-10pt}
+  \vspace{-7pt}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Madras Christian College}{June 2018 -- May 2021}
@@ -171,14 +182,16 @@
       {Unitary Invariants for Representations of Operator Algebras}{Sept. 2023 -- Present}
       {Reading Project}{Dr. Soumyashant Nayak, ISI Bangalore}
       \resumeItemListStart
-        \resumeItem{Plans to read the paper by Richard Kadison of the same name}
+        \resumeItem{Plans to read the paper by Richard Kadison of the same name.}
+        \resumeItem{Currently reviewing the representations of finite groups and C* algebras as a first step to the reading project.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Introduction to C* Algebras}{June 2023 -- Sept. 2023}
       {Summer Reading Project}{Dr. P Shankar, Cochin University of Science and Technology}
       \resumeItemListStart
-        \resumeItem{Understood the basics of Banach and C* algebra theory including spectral theorem, Gelfand transforms, compact and Fredholm operators, functional calculus, sesquilinear forms, positive linear functionals, and GNS representations.}
+        \resumeItem{Understood the basics of Banach algebras including spectrum, Gelfand representations of abelian algebras, compact and Fredholm operators in Hilbert spaces.}
+        \resumeItem{Learned C* algebra theory including spectral Gelfand transforms, functional calculus, sesquilinear forms, positive linear functionals, and GNS construction.}
         \resumeItem{Covered chapters 1-3 from \textit{C* Algebras and Operator Theory} by \textit{Gerald Murphy} and parts of chapter 1 from \textit{An Invitation to C* Algebras} by \textit{Willian Arveson}.}
     \resumeItemListEnd
 
@@ -190,15 +203,6 @@
         \resumeItem{Covered chapters 3, parts of chapter 4 and 10 from \textit{Early Fourier Analysis} by \textit{Hugh L Montgomery} and parts of chapter 19 from \textit{Real and Complex Analysis} by \textit{Walter Rudin}.}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {Computability}{Jan. 2022 -- March 2022}
-      {Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
-      \resumeItemListStart
-        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
-        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
-        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
-        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
-    \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
@@ -207,34 +211,24 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
 
-      % \resumeProjectHeading
-      %     {\textbf{Frontier Symposium in Mathematics} $|$ \emph{Level 1 Camp}}{April 2022 -- May 2021}
-      %     \resumeItemListStart
-      %       \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
-      %       \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
-      %       \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
-      %       \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
-      %     \resumeItemListEnd
-      %     \vspace{-13pt}
-
       \resumeProjectHeading
           {\textbf{Mathematics Training and Talent Search} $|$ \emph{Level 1 Camp}}{April 2021 -- May 2021}
           \resumeItemListStart
             \resumeItem{Participated in the online summer camp hosted by MTTS trust, funded by the National Board of Higher Mathematics.}
             \resumeItem{Helped revise concepts in group theory, real analysis and linear algebra.}
-            \resumeItem{Aided active discussion of mathematics.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Mathematics Training and Talent Search} $|$ \emph{Level 0 Camp}}{May 2020 -- June 2020}
           \resumeItemListStart
-            \resumeItem{Gained a deeper understanding of topics including Logic, Sequence and Series, Vector Spaces.}
+            \resumeItem{Gained a deeper understanding of topics including logic, sequence and series, vector spaces.}
+            \resumeItem{The programme promoted active discussions in mathematics and gave a platform to connect with people passionate about mathematics.}
           \resumeItemListEnd 
           \vspace{-13pt}
 
     \resumeSubHeadingListEnd
-\vspace{-15pt}
+\vspace{-5pt}
 
 
 %
@@ -242,24 +236,28 @@
 \section{Leadership / Extracurricular}
     \resumeSubHeadingListStart
         \resumeSubheading{Operator Algebra Reading Group}{Sept. 2023 -- Present}{}{}
+        \vspace{-15pt}
             \resumeItemListStart
-                \resumeItem{Started a reading group with a few friends who are interested in the basics of C* algebra.}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Reading group of friends who are interested in discussions on the basics of C* algebra and related topics.}
+                \resumeItem{Hosts weekly meetups and presentations on selected topics.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Computability}{Jan. 2022 -- March 2022}{Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
+            \resumeItemListStart
+                \resumeItem{Understood the notion of computable functions in unlimitied register machines(URM).}
+                \resumeItem{Read upto Church-Turing thesis from \textit{Computability: An Introduction to Recursive Function Theory} by \textit{Nigel Cutland}.}
             \resumeItemListEnd
 
         \resumeSubheading{Pi Quiz 3.0}{March 14, 2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Co-hosted the annual $\pi$ day quiz organized by the maths club of IISER Thiruvananthapuram.}
+                \resumeItem{Framed questions and hosted rounds in the online quiz competition.}
             \resumeItemListEnd
 
         \resumeSubheading{Online Foundation Course in Mathematics}{Sept. 2021 -- Oct. 2021}{Mentor}{MTTS Trust}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Guided pre-final year undergraduate students in the post lecture discussion sessions of the course.}
+                \resumeItem{The course aimed at helping the students develop mathematical thinking by focusing on logic, sequence and limits and linear algebra.}
             \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -291,40 +289,31 @@
 
   \resumeSubHeadingListEnd
 
-\section{Other Projects}
+\section{Volunteering and Other Projects}
     \resumeSubHeadingListStart
         \resumeSubheading{Math Modelling}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Modelled the partial differential equations for the internalization of vesicles through cell membrane. \href{https://2022.igem.wiki/iiser-tvm/model}{Link}}
             \resumeItemListEnd
 
         \resumeSubheading{Web Development}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Helped in the development of the team webpage. \href{https://2022.igem.wiki/iiser-tvm}{Link}}
             \resumeItemListEnd
 
-        \resumeSubheading{XOR Encryptor}{Jan. 2021}{Developer}{}
+        \resumeSubheading{XOR Encryptor}{Jan. 2022}{Developer}{}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Developed a simple programme to encrypt text and files alike using a symmetric key or password. \href{https://github.com/joelsleeba/xor-encryptor}{Link}}
             \resumeItemListEnd
 
         \resumeSubheading{CSSart}{May. 2020}{Developer}{}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Created a handful of webpages as a part of learning CSS. \href{https://joelsleeba.github.io/CSSart}{Link}}
             \resumeItemListEnd
 
         \resumeSubheading{Search for Extra Terrestrial Intelligence}{Sept. 2015 --}{Volunteer}{SETI Institute}
             \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+                \resumeItem{Contributed to the SETI@Home initiative which uses idle time in computational device for data crunching throught the BOINC platform.}
             \resumeItemListEnd
  
     \resumeSubHeadingListEnd
