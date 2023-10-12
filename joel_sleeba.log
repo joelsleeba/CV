@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.19)  12 OCT 2023 09:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.19)  12 OCT 2023 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,7 +511,7 @@ public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy6.pfb>
-Output written on joel_sleeba.pdf (2 pages, 124357 bytes).
+Output written on joel_sleeba.pdf (2 pages, 124270 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
