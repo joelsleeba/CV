@@ -44,12 +44,15 @@
 \addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.4in}
 
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{hanblue}{rgb}{0.25, 0.25, 0.9}
+
 \urlstyle{same}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=black,
+    urlcolor=hanblue,
     pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
     }
@@ -60,8 +63,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{-4pt}\scshape\raggedright\large\bfseries \color{hanblue}
+}{}{0em}{}[\color{hanblue}\titlerule \vspace{-3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -125,7 +128,7 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Joel Sleeba} \\ \vspace{5pt}
+    {\Huge Joel Sleeba} \\ \vspace{5pt}
     % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
     % \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{email@gmail.com}} ~ 
     \small \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{joelsleeba1@gmail.com}} ~ 
@@ -136,12 +139,12 @@
     \vspace{-5pt}
 \end{center}
 
-\hypersetup{
-  urlcolor=blue
-  }
+% \section{About Me}
+% I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in operator algebras. Beside math I am interested in Linux, open source software, photography and movies.
+% \vspace{-5pt}
 
-\section{About Me}
-I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in operator algebras. Beside math I am interested in Linux, open source software, photography and movies.
+\section{Research Interests}
+I am broadly interested in {\bf functional analysis} and {\bf harmonic analysis}. I am currently working on {\bf operator algebras}. As part of my master's thesis I have worked on {\bf Fourier analysis}.
 \vspace{-5pt}
 
 %-----------EDUCATION-----------
@@ -175,7 +178,7 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
 
             \end{itemize}
         \end{multicols}
-        \vspace*{0.0\multicolsep}
+        \vspace*{1\multicolsep}
     %\resumeSubHeadingListEnd
 
 
@@ -185,7 +188,7 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
 
     \resumeSubheading
       {Unitary Invariants for Representations of Operator Algebras}{Sept. 2023 -- Present}
-      {Reading Project}{Dr. Soumyashant Nayak, ISI Bangalore}
+      {Reading Project}{\href{https://www.isibang.ac.in/~soumyashant/}{Dr. Soumyashant Nayak}, ISI Bangalore}
       \resumeItemListStart
         \resumeItem{Plans to read the article by Richard Kadison of the same name.}
         \resumeItem{Currently reviewing the representations of groups and C* algebras as a first step to the reading project.}
@@ -193,7 +196,7 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
 
     \resumeSubheading
       {Introduction to C* Algebras}{June 2023 -- Sept. 2023}
-      {Summer Reading Project}{Dr. P Shankar, Cochin University of Science and Technology}
+      {Summer Reading Project}{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr. P Shankar}, Cochin University of Science and Technology}
       \resumeItemListStart
         \resumeItem{Understood the basics of Banach algebras including spectrum, Gelfand representations of abelian algebras, compact and Fredholm operators in Hilbert spaces.}
         \resumeItem{Learned C* algebra theory including Gelfand transforms, functional calculus, sesquilinear forms, positive linear functionals, and GNS construction.}
@@ -203,7 +206,7 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
 
     \resumeSubheading
       {A Study in Fourier Analysis}{Jan. 2023 -- May 2023}
-      {Masters Thesis, Grade: A+ (Maximum possible grade)}{Dr. P Devaraj, IISER Thiruvananthapuram}
+      {Masters Thesis}{\href{https://www.iisertvm.ac.in/faculty/devarajp}{Dr. P Devaraj}, IISER Thiruvananthapuram}
       \resumeItemListStart
         \resumeItem{Explored Fourier transforms in the circle and line, $\ell^p$ convergence of Fourier series, Fourier Inversion, and classical Paley Wiener theorems}
         \resumeItem{Covered chapters 3, parts of chapter 4 and 10 from \textit{Early Fourier Analysis} by \textit{Hugh L Montgomery} and parts of chapter 19 from \textit{Real and Complex Analysis} by \textit{Walter Rudin}.}
@@ -248,6 +251,11 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
                 \resumeItem{Hosts weekly meetups and presentations on selected topics.}
             \resumeItemListEnd
 
+        \resumeSubheading{Introduction to C* algebras}{Oct. 9, 2023}{Student Seminar Presenatation}{IISER Thiruvananthapuram}
+            \resumeItemListStart
+                \resumeItem{\href{https://github.com/joelsleeba/presentations/blob/master/IISERTVM-C-Algebra/pres.pdf}{Access the presentation slides}}
+            \resumeItemListEnd
+
         \resumeSubheading{Computability}{Jan. 2022 -- March 2022}{Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
             \resumeItemListStart
                 \resumeItem{Understood the notion of computable functions in unlimitied register machines(URM).}
@@ -258,7 +266,6 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
         \resumeSubheading{Pi Quiz 3.0}{March 14, 2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
             \resumeItemListStart
                 \resumeItem{Co-hosted the annual $\pi$ day quiz organized by the maths club of IISER Thiruvananthapuram.}
-                \resumeItem{Framed questions and hosted rounds in the online quiz competition.}
             \resumeItemListEnd
 
         \resumeSubheading{Online Foundation Course in Mathematics}{Sept. 2021 -- Oct. 2021}{Mentor}{MTTS Trust}
@@ -305,7 +312,7 @@ I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in o
 
         \resumeSubheading{Web Development}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
             \resumeItemListStart
-                \resumeItem{Helped in the development of the team webpage. \href{https://2022.igem.wiki/iiser-tvm}{[Link]}}
+                \resumeItem{\href{https://2022.igem.wiki/iiser-tvm}{Access the webpage}}
             \resumeItemListEnd
 
         \resumeSubheading{XOR Encryptor}{Jan. 2022}{Developer}{}
