@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.19)  12 OCT 2023 09:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.19)  12 OCT 2023 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,28 +357,28 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )) (/usr/local/texlive/2023/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 58.
+Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 (./joel_sleeba.aux)
 \openout1 = `joel_sleeba.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count291
@@ -393,74 +393,74 @@ LaTeX Font Info:    ... okay on input line 122.
 \makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks32
 )
-Package hyperref Info: Link coloring ON on input line 122.
+Package hyperref Info: Link coloring ON on input line 123.
 (./joel_sleeba.out) (./joel_sleeba.out)
 \@outlinefile=\write3
 \openout3 = `joel_sleeba.out'.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 134.
+nput line 135.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 135.
+ input line 136.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.
 fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 135.
+n input line 136.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 136.
+ input line 137.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
 fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 136.
+n input line 137.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 146.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 147.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 146.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 147.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 146.
+(Font)              using `OT1/cmss/bx/n' instead on input line 147.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 155.
+(Font)              <10.95> on input line 156.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 155.
+(Font)              <8> on input line 156.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 155.
+(Font)              <6> on input line 156.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 15
-5.
+6.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 155.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 156.
 
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 155.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 156.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 170.
+(Font)              <5> on input line 171.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 171.
+(Font)              <7> on input line 172.
 
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 224--226
+Overfull \hbox (0.55968pt too wide) in paragraph at lines 225--227
 []  
  []
 
 
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 232--234
+Overfull \hbox (0.55968pt too wide) in paragraph at lines 233--235
 []  
  []
 
@@ -494,7 +494,7 @@ Package rerunfilecheck Info: File `joel_sleeba.out' has not changed.
 Here is how much of TeX's memory you used:
  14176 strings out of 475740
  243421 string characters out of 5782629
- 1889755 words of memory out of 5000000
+ 1886755 words of memory out of 5000000
  34743 multiletter control sequences out of 15000+600000
  521674 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -511,7 +511,7 @@ public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy6.pfb>
-Output written on joel_sleeba.pdf (2 pages, 124270 bytes).
+Output written on joel_sleeba.pdf (2 pages, 124147 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
