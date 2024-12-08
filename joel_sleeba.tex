@@ -1,3 +1,4 @@
+% TeX_root = ./joel_sleeba.tex
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -13,11 +14,10 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
-\usepackage{soul}
+% \usepackage{soul}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -29,7 +29,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -50,13 +49,13 @@
 
 \urlstyle{same}
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=hanblue,
-    pdftitle={Overleaf Example},
-    pdfpagemode=FullScreen,
-    }
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=hanblue,
+  pdftitle={Overleaf Example},
+  pdfpagemode=FullScreen,
+}
 
 \raggedbottom
 \raggedright
@@ -73,37 +72,38 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+\item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -111,65 +111,99 @@
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.0in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} &
+% Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} &
+% Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
 \begin{center}
-    {\Huge Joel Sleeba} \\ \vspace{5pt}
-    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
-    % \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{email@gmail.com}} ~ 
-    \small \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {joelsleeba1@gmail.com}} ~ 
-    \href{https://twitter.com/JoelSleeba/}{\raisebox{-0.2\height}\faTwitter\ {JoelSleeba}}  ~
-    \href{https://github.com/joelsleeba}{\raisebox{-0.2\height}\faGithub\ {joelsleeba}} ~
-    \href{https://joelsleeba.github.io/}{\raisebox{-0.2\height}\faGlobe\ {joelsleeba.github.io}}
+  {\Huge Joel Sleeba} \\ \vspace{5pt}
+  % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+  % \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~
+  % \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\
+  % \ul{email@gmail.com}} ~
+  \small
+  \href{mailto:joelsleeba1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\
+  {joelsleeba1@gmail.com}} ~
+  \href{https://twitter.com/JoelSleeba/}{\raisebox{-0.2\height}\faTwitter\ {JoelSleeba}}
+  ~
+  \href{https://github.com/joelsleeba}{\raisebox{-0.2\height}\faGithub\ {joelsleeba}}
+  ~
+  \href{https://joelsleeba.github.io/}{\raisebox{-0.2\height}\faGlobe\ {joelsleeba.github.io}}
 
-    \vspace{-5pt}
+  \vspace{-5pt}
 \end{center}
 
 % \section{About Me}
-% I am a math graduate from IISER Thiruvananthapuram. I am broadly interested in operator algebras. Beside math I am interested in Linux, open source software, photography and movies.
+% I am a math graduate from IISER Thiruvananthapuram. I am broadly
+% interested in operator algebras. Beside math I am interested in
+% Linux, open source software, photography and movies.
 % \vspace{-5pt}
 
 % \section{Research Interests}
-% I am broadly interested in {\bf functional analysis} and {\bf harmonic analysis}. I am currently working on {\bf operator algebras}. As part of my master's thesis I have worked on {\bf Fourier analysis}.
+% I am broadly interested in {\bf functional analysis} and {\bf
+% harmonic analysis}. I am currently working on {\bf operator
+% algebras}. As part of my master's thesis I have worked on {\bf
+% Fourier analysis}.
 % \vspace{-5pt}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Master of Science in Mathematics}{October 2021 -- May 2023}
-      {Indian Institute of Science Education and Research | GPA: 8.38/10}{Thiruvananthapuram, Kerala}
-      \resumeItemListStart
-      % \resumeItem{GPA: 8.38 (out of 10)}
-      \resumeItem{Relevant coursework: linear algebra, functional analysis, topology, measure theory, probability theory, machine learning}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-  \vspace{-12pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelor of Science in Mathematics}{June 2018 -- May 2021}
-      {Madras Christian College | GPA: 8.04/10.0}{Chennai, Tamil Nadu}
-      \resumeItemListStart
-      % \resumeItem{GPA: 8.01 (out of 10)}
-      \resumeItem{Relevant coursework: linear algebra, real analysis, complex analysis, abstract algebra}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-  \vspace{-8pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{PhD in Mathematics}{August 2024 -- Present}
+{University of Houston}{Houston, TX}
+\resumeItemListStart
+% \resumeItem{GPA: 8.38 (out of 10)}
+\resumeItem{Relevant coursework: measure Theory, functional analysis}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Master of Science in Mathematics}{October 2021 -- May 2023}
+{Indian Institute of Science Education and Research | GPA:
+8.38/10}{Thiruvananthapuram, Kerala}
+\resumeItemListStart
+% \resumeItem{GPA: 8.38 (out of 10)}
+\resumeItem{Relevant coursework: linear algebra, functional analysis,
+topology, measure theory, probability theory, machine learning}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Science in Mathematics}{June 2018 -- May 2021}
+{Madras Christian College | GPA: 8.04/10.0}{Chennai, Tamil Nadu}
+\resumeItemListStart
+% \resumeItem{GPA: 8.01 (out of 10)}
+\resumeItem{Relevant coursework: linear algebra, real analysis,
+complex analysis, abstract algebra}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-8pt}
 
 % %------RELEVANT COURSEWORK-------
 % \section{Relevant Coursework}
@@ -190,205 +224,283 @@
 %         \vspace*{0.0\multicolsep}
 %     %\resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------
 \section{Research Experience}
-  \resumeSubHeadingListStart
-% \href{https://scholar.google.co.in/citations?hl=en\&user=8Wvnt8MAAAAJ\&view_op=list_works\&sortby=pubdate}{Prof. M N N Namboodiri},
-    \resumeSubheading
-      {Peaking Qubit Channels}{October 2023 -- Present}
-      {Research Project}{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr. P Shankar}, Cochin University of Science and Technology (CUSAT)}
-      \resumeItemListStart
-        \resumeItem{Exploring the possibility to introduce the notion of classical peak points to unital qubit channels.}
-        \resumeItem{Tried to employ the characterisation of unital qubit channels from \textit{\href{https://arxiv.org/abs/2301.01358}{On unital qubit channels}}, Li and Choi}
-        \resumeItem{Learned about completely positive maps, Choi's theorem, and Steinspring dilation theorem.}
-        \resumeItem{References: \textit{Completely Bounded Maps and Operator Algebras}, Vern Paulsen and \textit{Completely Positive Maps on Complex Matrices}, Man-Duen Choi}
-      \resumeItemListEnd
+\resumeSubHeadingListStart
+% \href{https://scholar.google.co.in/citations?hl=en\&user=8Wvnt8MAAAAJ\&view_op=list_works\&sortby=pubdate}{Prof.
+% M N N Namboodiri},
+\resumeSubheading
+{Peaking Qubit Channels}{October 2023 -- April 2024}
+{Research
+Project}{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr.
+P Shankar}, Cochin University of Science and Technology (CUSAT)}
+\resumeItemListStart
+\resumeItem{Exploring the possibility to introduce the notion of
+classical peak points to unital qubit channels.}
+\resumeItem{Tried to employ the characterisation of unital qubit
+  channels from \textit{\href{https://arxiv.org/abs/2301.01358}{On
+unital qubit channels}}, Li and Choi}
+\resumeItem{Learned about completely positive maps, Choi's theorem,
+and Steinspring dilation theorem.}
+\resumeItem{References: \textit{Completely Bounded Maps and Operator
+  Algebras}, Vern Paulsen and \textit{Completely Positive Maps on
+Complex Matrices}, Man-Duen Choi}
+\resumeItemListEnd
 
-    % \resumeSubheading
-    %   {Unitary Invariants for Representations of Operator Algebras}{Sept. 2023 -- Present}
-    %   {Reading Project}{\href{https://www.isibang.ac.in/~soumyashant/}{Dr. Soumyashant Nayak}, ISI Bangalore}
-    %   \resumeItemListStart
-    %     \resumeItem{Plans to review the article of the same title by Richard Kadison.}
-    %     \resumeItem{Reviewed representations of finite groups and C* algebras as the initial stage of the reading project.}
-    %   \resumeItemListEnd
+% \resumeSubheading
+%   {Unitary Invariants for Representations of Operator
+% Algebras}{Sept. 2023 -- Present}
+%   {Reading
+% Project}{\href{https://www.isibang.ac.in/~soumyashant/}{Dr.
+% Soumyashant Nayak}, ISI Bangalore}
+%   \resumeItemListStart
+%     \resumeItem{Plans to review the article of the same title by
+% Richard Kadison.}
+%     \resumeItem{Reviewed representations of finite groups and C*
+% algebras as the initial stage of the reading project.}
+%   \resumeItemListEnd
 
-    \resumeSubheading
-      {Introduction to C* Algebras}{June 2023 -- Sept. 2023}
-      {Summer Reading Project}{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr. P Shankar}, CUSAT}
-      \resumeItemListStart
-        \resumeItem{Learned the basics of Banach and C* algebras, Gelfand transforms, functional calculus, sesquilinear forms, GNS constructions.}
-        \resumeItem{References: \textit{C* Algebras and Operator Theory} by Gerard Murphy and \textit{An Invitation to C* Algebras} by William Arveson.}
-        % \resumeItem{This project motivated me to further explore C* algebras and their representations.}
-    \resumeItemListEnd
+\resumeSubheading
+{Introduction to C* Algebras}{June 2023 -- Sept. 2023}
+{Summer Reading
+Project}{\href{https://iqac.cusat.ac.in/Web/profile_view/433/Dr.SHANKARP}{Dr.
+P Shankar}, CUSAT}
+\resumeItemListStart
+\resumeItem{Learned the basics of Banach and C* algebras, Gelfand
+transforms, functional calculus, sesquilinear forms, GNS constructions.}
+\resumeItem{References: \textit{C* Algebras and Operator Theory} by
+Gerard Murphy and \textit{An Invitation to C* Algebras} by William Arveson.}
+% \resumeItem{This project motivated me to further explore C*
+% algebras and their representations.}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {A Study in Fourier Analysis}{January 2023 -- May 2023}
-      {Masters Thesis}{\href{https://www.iisertvm.ac.in/faculty/devarajp}{Dr. P Devaraj}, IISER Thiruvananthapuram}
-      \resumeItemListStart
-        \resumeItem{Learned about Fourier transforms in the circle and line, $\ell^p$ convergence of Fourier series, Fourier Inversion, and classical Paley Wiener theorems}
-        \resumeItem{References: \textit{Early Fourier Analysis} by Hugh L Montgomery and \textit{Real and Complex Analysis} by Walter Rudin.}
-        \resumeItem{\href{https://github.com/joelsleeba/Master-s-Project/blob/master/Thesis/main.pdf}{Read my report on GitHub}}
-    \resumeItemListEnd
+\resumeSubheading
+{A Study in Fourier Analysis}{January 2023 -- May 2023}
+{Masters
+Thesis}{\href{https://www.iisertvm.ac.in/faculty/devarajp}{Dr. P
+Devaraj}, IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{Learned about Fourier transforms in the circle and line,
+  $\ell^p$ convergence of Fourier series, Fourier Inversion, and
+classical Paley Wiener theorems}
+\resumeItem{References: \textit{Early Fourier Analysis} by Hugh L
+Montgomery and \textit{Real and Complex Analysis} by Walter Rudin.}
+\resumeItem{\href{https://github.com/joelsleeba/Master-s-Project/blob/master/Thesis/main.pdf}{Read
+my report on GitHub}}
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 \vspace{-12pt}
 
 %-----------PROJECTS-----------
 \section{Workshops}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
+\vspace{-5pt}
+\resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\textbf{Mathematics Training and Talent Search (MTTS)} $|$ \emph{Level 1 Summer Camp}}{April 2021 -- May 2021}
-          \resumeItemListStart
-            \resumeItem{Participated in the online summer camp hosted by MTTS trust, funded by the National Board of Higher Mathematics.}
-            \resumeItem{Helped revise concepts in group theory, real analysis and linear algebra.}
-          \resumeItemListEnd
-          \vspace{-15pt}
+\resumeProjectHeading
+{\textbf{Mathematics Training and Talent Search (MTTS)} $|$
+\emph{Level 1 Summer Camp}}{April 2021 -- May 2021}
+\resumeItemListStart
+\resumeItem{Participated in the online summer camp hosted by MTTS
+trust, funded by the National Board of Higher Mathematics.}
+\resumeItem{Helped revise concepts in group theory, real analysis and
+linear algebra.}
+\resumeItemListEnd
+\vspace{-15pt}
 
-      \resumeProjectHeading
-          {\textbf{Mathematics Training and Talent Search (MTTS)} $|$ \emph{Level 0 Summer Camp}}{May 2020 -- June 2020}
-          \resumeItemListStart
-            \resumeItem{Gained a deeper understanding of topics including logic, sequence and series, vector spaces.}
-            \resumeItem{The programme promoted active discussions in mathematics and gave a platform to connect with people passionate about mathematics.}
-          \resumeItemListEnd 
-          \vspace{-15pt}
+\resumeProjectHeading
+{\textbf{Mathematics Training and Talent Search (MTTS)} $|$
+\emph{Level 0 Summer Camp}}{May 2020 -- June 2020}
+\resumeItemListStart
+\resumeItem{Gained a deeper understanding of topics including logic,
+sequence and series, vector spaces.}
+\resumeItem{The programme promoted active discussions in mathematics
+and gave a platform to connect with people passionate about mathematics.}
+\resumeItemListEnd
+\vspace{-15pt}
 
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 \vspace{-5pt}
 
 \section{Reading Groups}
 \resumeSubHeadingListStart
 
-        \resumeSubheading{Community for Linear Algebra Pursuits}{November 2023 -- December 2023}{Reading Group}{\href{https://www.neeldhara.com}{Dr. Neeldhara Misra}, IIT Gandhinagar}
-        % \vspace{-15pt}
-            \resumeItemListStart
-                \resumeItem{Reading group for the book \textit{Thirty-three Miniatures: Mathematical and Algorithmic Applications of Linear Algebra}}
-                \resumeItem{{\href{https://linearalgebra33.discourse.group/}{Access the community website here}}}
-            \resumeItemListEnd
+\resumeSubheading{Community for Linear Algebra Pursuits}{November
+2023 -- December 2023}{Reading
+Group}{\href{https://www.neeldhara.com}{Dr. Neeldhara Misra}, IIT
+Gandhinagar}
+% \vspace{-15pt}
+\resumeItemListStart
+\resumeItem{Reading group for the book \textit{Thirty-three
+Miniatures: Mathematical and Algorithmic Applications of Linear Algebra}}
+\resumeItem{{\href{https://linearalgebra33.discourse.group/}{Access
+the community website here}}}
+\resumeItemListEnd
 
-        \resumeSubheading{Operator Algebra Reading Group}{October 2023 -- Present}{}{}
-        \vspace{-18pt}
-            \resumeItemListStart
-                \resumeItem{Reading group of graduate students interested in operator algebras and related topics.}
-                \resumeItem{{\href{https://sites.google.com/view/operator-algebras/}{Access the website here}}}
-            \resumeItemListEnd
+\resumeSubheading{Operator Algebra Reading Group}{October 2023 --
+February 2024}{}{}
+\vspace{-18pt}
+\resumeItemListStart
+\resumeItem{Reading group of graduate students interested in operator
+algebras and related topics.}
+\resumeItem{{\href{https://sites.google.com/view/operator-algebras/}{Access
+the website here}}}
+\resumeItemListEnd
 
-          \pagebreak
+\pagebreak
 
-        \resumeSubheading{Computability}{Jananuary 2022 -- March 2022}{Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
-            \resumeItemListStart
-                \resumeItem{Learned about computable functions in unlimitied register machines(URM).}
-                \resumeItem{Reference: \textit{Computability: An Introduction to Recursive Function Theory}, Nigel Cutland.}
-                \resumeItem{An article we authored as part of the project was published in the quarterly newsletter of Club of Mathematics. \href{https://raw.githubusercontent.com/joelsleeba/URM-Computability/master/Computable_Numbers.pdf}{Access it here}}
-            \resumeItemListEnd
+\resumeSubheading{Computability}{Jananuary 2022 -- March
+2022}{Student Reading Project}{Ashish Kujur, IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{Learned about computable functions in unlimitied register
+machines(URM).}
+\resumeItem{Reference: \textit{Computability: An Introduction to
+Recursive Function Theory}, Nigel Cutland.}
+\resumeItem{An article we authored as part of the project was
+  published in the quarterly newsletter of Club of Mathematics.
+  \href{https://raw.githubusercontent.com/joelsleeba/URM-Computability/master/Computable_Numbers.pdf}{Access
+it here}}
+\resumeItemListEnd
 
-        \resumeSubheading{Students' Recreational MTTS}{June 2020 -- August 2020}{Student Reading Group}{MTTS 2020 Summer Camp Alumni}
-            \resumeItemListStart
-                \resumeItem{Reading group aimed to self learn and discuss topics from \textit{Linear Algebra} by \textit{Friedberg, Incel, Spence}.}
-                \resumeItem{\href{https://www.notion.so/Students-Recreational-MTTS-83d30db273f74fa08fabebf7163ad843}{Access the website here}}
-            \resumeItemListEnd
+\resumeSubheading{Students' Recreational MTTS}{June 2020 -- August
+2020}{Student Reading Group}{MTTS 2020 Summer Camp Alumni}
+\resumeItemListStart
+\resumeItem{Reading group aimed to self learn and discuss topics from
+\textit{Linear Algebra} by \textit{Friedberg, Incel, Spence}.}
+\resumeItem{\href{https://www.notion.so/Students-Recreational-MTTS-83d30db273f74fa08fabebf7163ad843}{Access
+the website here}}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 \section{Additional Courses}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-    {\textbf CS101.2x: Object-Oriented Programming}{July 2020 -- Dec. 2020}
-    {Grade: A+}{MOOCs Course, IITBombayX}
+\resumeSubheading
+{\textbf CS101.2x: Object-Oriented Programming}{July 2020 -- Dec. 2020}
+{Grade: A+}{MOOCs Course, IITBombayX}
 
-    \resumeSubheading
-    {\textbf CS101.1x: Programming Basics}{July 2020 -- Dec. 2020}
-    {Grade: A+}{MOOCs Course, IITBombayX}
+\resumeSubheading
+{\textbf CS101.1x: Programming Basics}{July 2020 -- Dec. 2020}
+{Grade: A+}{MOOCs Course, IITBombayX}
 
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 \section{Extracurricular}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-        \resumeSubheading{\TeX - Click}{Dec. 2023 -- Present}{Firefox Addon}{}
-            \resumeItemListStart
-                \resumeItem{Currently developing a Firefox addon to easily extract \TeX \ from the equations on websites including arXiv, Wikipedia, and StackExchange. \href{https://addons.mozilla.org/en-US/firefox/addon/tex-click/}{Access the addon}}
-            \resumeItemListEnd
+\resumeSubheading{\TeX - Click}{Dec. 2023}{Firefox Addon}{}
+\resumeItemListStart
+\resumeItem{Currently developing a Firefox addon to easily extract
+  \TeX \ from the equations on websites including arXiv, Wikipedia, and
+  StackExchange.
+  \href{https://addons.mozilla.org/en-US/firefox/addon/tex-click/}{Access
+the addon}}
+\resumeItemListEnd
 
-        \resumeSubheading{Introduction to C* algebras}{October 9, 2023}{Student Seminar Presentation}{IISER Thiruvananthapuram}
-            \resumeItemListStart
-                \resumeItem{\href{https://github.com/joelsleeba/presentations/blob/master/IISERTVM-C-Algebra/pres.pdf}{Access the presentation slides}}
-            \resumeItemListEnd
+\resumeSubheading{Introduction to C* algebras}{October 9,
+2023}{Student Seminar Presentation}{IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{\href{https://github.com/joelsleeba/presentations/blob/master/IISERTVM-C-Algebra/pres.pdf}{Access
+the presentation slides}}
+\resumeItemListEnd
 
-        \resumeSubheading{Math Modelling}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
-            \resumeItemListStart
-                \resumeItem{Modelled the partial differential equations for the internalization of vesicles through cell membrane. \href{https://2022.igem.wiki/iiser-tvm/model}{[Link]}}
-            \resumeItemListEnd
+\resumeSubheading{Math Modelling}{Sept. 2022 -- Nov.
+2022}{Volunteer}{The International Genetically Engineered Machine
+competition (iGEM), IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{Modelled the partial differential equations for the
+  internalization of vesicles through cell membrane.
+\href{https://2022.igem.wiki/iiser-tvm/model}{[Link]}}
+\resumeItemListEnd
 
-        \resumeSubheading{Web Development}{Sept. 2022 -- Nov. 2022}{Volunteer}{The International Genetically Engineered Machine competition (iGEM), IISER Thiruvananthapuram}
-            \resumeItemListStart
-                \resumeItem{\href{https://2022.igem.wiki/iiser-tvm}{Access the webpage}}
-            \resumeItemListEnd
+\resumeSubheading{Web Development}{Sept. 2022 -- Nov.
+2022}{Volunteer}{The International Genetically Engineered Machine
+competition (iGEM), IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{\href{https://2022.igem.wiki/iiser-tvm}{Access the webpage}}
+\resumeItemListEnd
 
-        \resumeSubheading{Peer Discussion: Real Analysis}{March 31, 2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
-            \resumeItemListStart
-                \resumeItem{Co-hosted the peer discussion session for first year integrated BS-MS students.}
-                % \resumeItem{Framed questions and hosted rounds in the online quiz competition.}
-            \resumeItemListEnd
+\resumeSubheading{Peer Discussion: Real Analysis}{March 31,
+2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
+\resumeItemListStart
+\resumeItem{Co-hosted the peer discussion session for first year
+integrated BS-MS students.}
+% \resumeItem{Framed questions and hosted rounds in the online quiz
+% competition.}
+\resumeItemListEnd
 
-        % \resumeSubheading{Pi Quiz 3.0}{March 14, 2022}{Host}{Club of Mathematics, IISER Thiruvananthapuram}
+% \resumeSubheading{Pi Quiz 3.0}{March 14, 2022}{Host}{Club of
+% Mathematics, IISER Thiruvananthapuram}
 
-        % \resumeSubheading{XOR Encryptor}{Jan. 2022}{Developer}{\href{https://github.com/joelsleeba/xor-encryptor}{Repository}}
+% \resumeSubheading{XOR Encryptor}{Jan.
+% 2022}{Developer}{\href{https://github.com/joelsleeba/xor-encryptor}{Repository}}
 
-        \resumeSubheading{Online Foundation Course in Mathematics}{September 2021 -- October 2021}{Mentor}{MTTS Trust}
-            \resumeItemListStart
-                \resumeItem{Guided first and second year undergraduate students in the post lecture discussion sessions of the course.}
-                \resumeItem{The course aimed at helping students develop mathematical thinking by focusing on logic, sequence and limits and linear algebra.}
-            \resumeItemListEnd
+\resumeSubheading{Online Foundation Course in Mathematics}{September
+2021 -- October 2021}{Mentor}{MTTS Trust}
+\resumeItemListStart
+\resumeItem{Guided first and second year undergraduate students in
+the post lecture discussion sessions of the course.}
+\resumeItem{The course aimed at helping students develop mathematical
+thinking by focusing on logic, sequence and limits and linear algebra.}
+\resumeItemListEnd
 
-        % \resumeSubheading{CSSart}{May. 2020}{Developer}{\href{https://joelsleeba.github.io/CSSart}{Website}}
-    \resumeSubHeadingListEnd
-
+% \resumeSubheading{CSSart}{May.
+% 2020}{Developer}{\href{https://joelsleeba.github.io/CSSart}{Website}}
+\resumeSubHeadingListEnd
 
 \section{Achievements}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-        \resumeSubheading
-        {\textbf M.Sc Entrance Examination}{2021}
-        {Rank 1, Mathematics}{Pondicherry University}
+\resumeSubheading
+{\textbf CSIR National Eligibility test for Junior Research
+Fellowship}{June 2024}
+{Rank 58, (out of 29118 applicants), Mathematics}{National Testing
+Agency, India}
 
-        \resumeSubheading
-        {\textbf M.Sc Entrance Examination}{2021}
-        {Rank 3, Mathematics}{Hyderabad Central University}
+\resumeSubheading
+{\textbf M.Sc Entrance Examination}{2021}
+{Rank 1, Mathematics}{Pondicherry University}
 
-        \resumeSubHeadingListEnd
+\resumeSubheading
+{\textbf M.Sc Entrance Examination}{2021}
+{Rank 3, Mathematics}{Hyderabad Central University}
 
+\resumeSubHeadingListEnd
 
 % \section{Volunteering and Other Projects}
 %     \resumeSubHeadingListStart
 %
 %             % \resumeItemListStart
-%             %     \resumeItem{Developed a simple programme to encrypt text and files using a symmetric key or password. \href{https://github.com/joelsleeba/xor-encryptor}{[Link]}}
+%             %     \resumeItem{Developed a simple programme to
+% encrypt text and files using a symmetric key or password.
+% \href{https://github.com/joelsleeba/xor-encryptor}{[Link]}}
 %             % \resumeItemListEnd
 %
-%         \resumeSubheading{CSSart}{May. 2020}{Developer}{\href{https://joelsleeba.github.io/CSSart}{Website}}
+%         \resumeSubheading{CSSart}{May.
+% 2020}{Developer}{\href{https://joelsleeba.github.io/CSSart}{Website}}
 %             % \resumeItemListStart
-%             %     \resumeItem{Created a handful of webpages as a part of learning CSS. \href{https://joelsleeba.github.io/CSSart}{[Link]}}
+%             %     \resumeItem{Created a handful of webpages as a
+% part of learning CSS. \href{https://joelsleeba.github.io/CSSart}{[Link]}}
 %             % \resumeItemListEnd
 %
 %
 %         %     \resumeItemListStart
-%         %         \resumeItem{Contributed to the SETI@Home initiative which uses idle time in computational device for data crunching throught the BOINC platform.}
+%         %         \resumeItem{Contributed to the SETI@Home
+% initiative which uses idle time in computational device for data
+% crunching throught the BOINC platform.}
 %         %     \resumeItemListEnd
 %
 %     \resumeSubHeadingListEnd
 
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \item{
-     \textbf{Programming}{: Python, C, C++, Java, Bash, SQL} \\
-     \textbf{Markup}{: \LaTeX, MarkDown, HTML, CSS} \\
-     \textbf{CAS}{: MATLAB, GNU Octave, Maxima, SageMath}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item{
+      \textbf{Programming}{: Python, C, C++, Java, Bash, SQL} \\
+      \textbf{Markup}{: \LaTeX, MarkDown, HTML, CSS} \\
+      \textbf{CAS}{: MATLAB, GNU Octave, Maxima, SageMath}
     }
- \end{itemize}
- \vspace{-16pt}
+\end{itemize}
+\vspace{-16pt}
 
 \end{document}
