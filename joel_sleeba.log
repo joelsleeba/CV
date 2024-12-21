@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.3)  8 DEC 2024 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.3)  20 DEC 2024 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -497,7 +497,13 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
 
-[2] (./joel_sleeba.aux)
+[2]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[3] (./joel_sleeba.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -510,13 +516,13 @@ Package rerunfilecheck Info: File `joel_sleeba.out' has not changed.
 (rerunfilecheck)             Checksum: 3A20A176221864DA8AF7116FD0BE26AF;916.
  ) 
 Here is how much of TeX's memory you used:
- 13919 strings out of 476076
- 237508 string characters out of 5793775
+ 13920 strings out of 476076
+ 237514 string characters out of 5793775
  1961187 words of memory out of 5000000
  35861 multiletter control sequences out of 15000+600000
  566044 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,11n,79p,304b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,304b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Reg
 ular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fre
 e-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -527,10 +533,10 @@ fonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx
 10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on joel_sleeba.pdf (2 pages, 124244 bytes).
+Output written on joel_sleeba.pdf (3 pages, 124723 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 11 named destinations out of 1000 (max. 500000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
